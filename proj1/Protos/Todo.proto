@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+option csharp_namespace = "proj1";
+
+package todoit;
+
+service ToDoIt {
+	rpc CreateToDo(CreateToDoRequest) returns (CreateToDoResponse) {}
+	rpc ReadToDo(ReadToDoRequest) returns (ReadToDoResponse) {}
+	rpc ListToDo(GetAllRequest) returns (GetAllResponse) {}
+	rpc UpdateToDo(UpdateToDoRequest) returns (UpdateToDoResponse) {}
+	rpc DeleteToDo(DeleteToDoRequest) returns (DeleteToDoResponse) {}
+
+}
+message CreateToDoRequest {
+	string firstname = 1;
+	string lastname = 2;
+	int32 age = 3;
+}
+message CreateToDoResponse {
+	int32 id = 1;
+}
+message ReadToDoRequest {
+	int32 id= 1;
+}
+message ReadToDoResponse {
+	int32 id = 1;
+	string firstname = 2;
+	string lastname = 3;
+	int32 age = 4;
+}
+message GetAllRequest {}
+message GetAllResponse {
+	repeated ReadToDoResponse to_do = 1;
+
+}message UpdateToDoRequest {
+    int32 id = 1;
+	string firstname = 2;
+	string lastname = 3;
+	int32 age = 4;
+    
+}
+  
+message UpdateToDoResponse {
+    int32 id = 1;
+}
+  
+message DeleteToDoRequest {
+    int32 id = 1;
+}
+  
+message DeleteToDoResponse {
+    int32 id = 1;
+}
