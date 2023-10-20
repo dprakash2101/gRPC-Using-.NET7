@@ -14,6 +14,7 @@ To work with this project, you need to have the following tools and software ins
 
 - [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0)
 - [Git](https://git-scm.com/)
+- [Postman](https://www.postman.com/)
   
 - Replace Connection srtring with your sql server Connection string
 
@@ -32,7 +33,9 @@ Copy code
 dotnet build
 dotnet run
 ```
+
 # Explore the Sample
+Use Postman to perform crud Operations.
 ### The sample project demonstrates a gRPC service with JSON transcoding. You can explore the following components:
 
 1. Proto folder: Contains the gRPC service definition file in Protocol Buffers (protobuf) format.
