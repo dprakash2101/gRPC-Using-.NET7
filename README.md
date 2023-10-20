@@ -2,9 +2,7 @@
 
 # gRPC with JSON Transcoding using .NET 7
 
-This repository contains a sample project that demonstrates how to implement gRPC communication with JSON transcoding using .NET 7. gRPC is a high-performance, language-agnostic remote procedure call (RPC) framework, and JSON transcoding allows you to use JSON as the message format for your gRPC services.
-
-## gRPC
+This repository contains a sample project that demonstrates how to implement gRPC communication with JSON transcoding using .NET 7. 
 gRPC is a modern open source high performance Remote Procedure Call (RPC) framework that can run in any environment. It can efficiently connect services in and across data centers with pluggable support for load balancing, tracing, health checking and authentication. It is also applicable in last mile of distributed computing to connect devices, mobile applications and browsers to backend services.
 ## Getting Started
 
@@ -16,6 +14,7 @@ To work with this project, you need to have the following tools and software ins
 
 - [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0)
 - [Git](https://git-scm.com/)
+  
 - Replace Connection srtring with your sql server Connection string
 
 ### Clone the Repository
